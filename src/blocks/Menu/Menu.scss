@@ -1,0 +1,25 @@
+.Menu {
+  &__list{
+    display: flex;
+    align-items: center;
+    gap: 42px;
+
+    @media (max-width: $descSmall) {
+      gap: 24px;
+    }
+  }
+
+  &__link{
+    color: $white-color;
+    font-size: px-to-em(14);
+    font-weight: 700;
+    line-height: 150%;
+    text-decoration: none;
+
+    @media (max-width: $tab) {
+      font-size: 36px;
+      color: $back-color;
+      -webkit-text-stroke: 1px $white-color;
+    }
+  }
+}

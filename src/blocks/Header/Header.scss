@@ -1,0 +1,58 @@
+.Header {
+
+	&__container{
+		padding-top: 28px;
+		padding-bottom: 28px;
+
+		@media (max-width: $tab) {
+			padding-top: 30px;
+			padding-bottom: 28px;
+		}
+
+		@media (max-width: $mob) {
+			padding-top: 20px;
+			padding-bottom: 21px;
+		}
+	}
+
+	&__content{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__left{
+		display: flex;
+		align-items: center;
+		gap: 76px;
+
+		@media (max-width: $descSmall) {
+			gap: 38px;
+		}
+	}
+
+	&__left-block{
+		display: flex;
+		align-items: center;
+		gap: 91px;
+	}
+
+	&__burger{
+		display: none;
+	}
+
+	&__logo{
+		display: block;
+		text-decoration: none;
+	}
+
+	&__button{
+		width: 293px;
+		height: 60px;
+
+		@media (max-width: $descSmall) {
+			width: 200px;
+		}
+	}
+
+}
