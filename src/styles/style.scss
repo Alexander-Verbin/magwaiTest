@@ -66,6 +66,8 @@ $black-color: #000;
 $white-color: #fff;
 $back-color: #131313;
 $clipButton-color: #C2AB81;
+$cardBlack-color: #171717;
+$cardGrey-color: #666;
 /////////////////////////////////Размеры/////////////////////////////
 $desc: 1920px;
 $descSmall: 1600px;
@@ -217,7 +219,7 @@ input::-webkit-inner-spin-button {
     line-height: px-to-per(46,38);
   }
 
-  @media (max-width: $tab) {
+  @media (max-width: $mob) {
     font-size: px-to-em(20);
     line-height: px-to-per(24,20);
   }
@@ -235,3 +237,5 @@ input::-webkit-inner-spin-button {
 @import './src/blocks/Menu/Menu';
 @import './src/blocks/ClipButton/ClipButton';
 @import './src/blocks/PictureSection/PictureSection';
+@import './src/blocks/CardsSection/CardsSection';
+@import './src/blocks/Card/Card';

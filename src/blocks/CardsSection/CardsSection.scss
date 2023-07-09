@@ -1,0 +1,54 @@
+.CardsSection {
+  &__container{
+    padding-top: 134px;
+    padding-bottom: 256px;
+
+    @media (max-width: $tab) {
+			padding-top: 44px;
+			padding-bottom: 156px;
+		}
+
+		@media (max-width: $mob) {
+			padding-top: 48px;
+			padding-bottom: 43px;
+		}
+  }
+
+  &__title{
+    margin-bottom: 53px;
+
+    @media (max-width: $tab) {
+			margin-bottom: 40px;
+      font-size: px-to-em(42);
+      line-height: px-to-per(51,42);
+		}
+
+		@media (max-width: $mob) {
+			margin-bottom: 30px;
+      font-size: px-to-em(20);
+    line-height: px-to-per(24,20);
+		}
+  }
+
+  &__content{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  &__cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  &__card{
+    flex: 0 0 18.456%;
+  }
+
+  &__button{
+    width: 293px;
+    height: 60px;
+    align-self: center;
+  }
+}
