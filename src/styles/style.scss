@@ -143,9 +143,19 @@ input::-webkit-inner-spin-button {
 //////////////////////////////////Общие стили (UI-Kit)//////////////////////////////////
 
 .container{
-	max-width: calc($desc - 180px);
+	max-width: calc($desc - 160px);
 	margin: 0 auto;
-	padding: 0 10px;
+	padding: 0 20px;
+
+  @media (max-width: $tab) {
+    max-width: calc($tab - 70px);
+    padding: 0 40px;
+  }
+
+  @media (max-width: $mob) {
+    max-width: $mob;
+    padding: 0 16px;
+  }
 }
 
 .jsBurger{
@@ -239,3 +249,4 @@ input::-webkit-inner-spin-button {
 @import './src/blocks/PictureSection/PictureSection';
 @import './src/blocks/CardsSection/CardsSection';
 @import './src/blocks/Card/Card';
+@import './src/blocks/Popup/Popup';

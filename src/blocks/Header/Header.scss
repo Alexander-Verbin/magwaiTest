@@ -1,6 +1,8 @@
 .Header {
+	
 
 	&__container{
+		position: relative;
 		padding-top: 28px;
 		padding-bottom: 28px;
 
@@ -39,6 +41,10 @@
 
 	&__burger{
 		display: none;
+
+		@media (max-width: $tab) {
+			display: block;
+		}
 	}
 
 	&__logo{
@@ -46,12 +52,43 @@
 		text-decoration: none;
 	}
 
+	&__phone{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+		background-color: rgba($color: $white-color, $alpha: 0);
+		border: 1px solid $white-color;
+		width: 92px;
+		height: 60px;
+	}
+
 	&__button{
 		width: 293px;
 		height: 60px;
+	}
 
-		@media (max-width: $descSmall) {
-			width: 200px;
+	&__menu{
+		@media (max-width:$tab) {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 100%;
+			height: 100vh;
+			background: $back-color;
+			opacity: 0;
+			visibility: hidden;
+			transition: opacity 1s, z-index 0.3s, visibility 0s linear 1s;
+			z-index: 0;
+
+
+			&.active{
+				opacity: 1;
+				visibility: visible;
+				transition-delay: 0s;
+				z-index: 1;
+			}
 		}
 	}
 

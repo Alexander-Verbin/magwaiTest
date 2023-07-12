@@ -1,21 +1,31 @@
 document.addEventListener('DOMContentLoaded', function () {
 	const burger = document.querySelector('.Header__burger');
 	const jsBurger = document.querySelector('.jsBurger');
-	//const navbar = document.querySelector('.Navbar')
 	const html = document.getElementsByTagName('html');
 	const body = document.getElementsByTagName('body');
-	const logo = document.querySelector(".Header__logo")
+	const menu = document.querySelector(".Header__menu")
 	const w = window.innerWidth;
-	const btnScroll = document.getElementsByClassName('jsBtnScroll');
-	const sectionTwo = document.querySelector('.SectionTwo')
 
 	if (burger) {
 		burger.addEventListener('click', function () {
 			jsBurger.classList.toggle('jsBurgerOpen');
-			//navbar.classList.toggle('active');
+			menu.classList.toggle('active');
 			html[0].classList.toggle('lock');
 			body[0].classList.toggle('lock');
 		});
 	}
-	;
+	if(w<1301){
+		menu.classList.add('container')
+	}else{
+		menu.classList.remove('container')
+	}
+
+	window.addEventListener('resize',()=>{
+		const w = window.innerWidth;
+		if(w<1301){
+			menu.classList.add('container')
+		}else{
+			menu.classList.remove('container')
+		}
+	})
 })
