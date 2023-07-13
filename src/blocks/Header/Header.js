@@ -3,7 +3,9 @@ document.addEventListener('DOMContentLoaded', function () {
 	const jsBurger = document.querySelector('.jsBurger');
 	const html = document.getElementsByTagName('html');
 	const body = document.getElementsByTagName('body');
-	const menu = document.querySelector(".Header__menu")
+	const menu = document.querySelector(".Header__menu");
+	const content = document.querySelector(".Header__content");
+	const btns = document.querySelector(".Header__right");
 	const w = window.innerWidth;
 
 	if (burger) {
@@ -20,8 +22,26 @@ document.addEventListener('DOMContentLoaded', function () {
 		menu.classList.remove('container')
 	}
 
+	if(w<768){
+		menu.append(btns)
+	}else{
+		content.append(btns)
+	}
+
 	window.addEventListener('resize',()=>{
+		const burger = document.querySelector('.Header__burger');
+		const jsBurger = document.querySelector('.jsBurger');
+		const html = document.getElementsByTagName('html');
+		const body = document.getElementsByTagName('body');
+		const menu = document.querySelector(".Header__menu");
+		const content = document.querySelector(".Header__content");
+		const btns = document.querySelector(".Header__right");
 		const w = window.innerWidth;
+		if(w<768){
+			menu.append(btns)
+		}else{
+			content.append(btns)
+		}
 		if(w<1301){
 			menu.classList.add('container')
 		}else{

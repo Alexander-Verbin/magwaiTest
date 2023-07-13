@@ -10,6 +10,10 @@
     @media (max-width: $tab) {
       height: 907px;
     }
+
+    @media (max-width: $mob) {
+      height: 495px;
+    }
   }
 
   &__gradient{
@@ -23,12 +27,26 @@
   &__container{
     padding-top: 158px;
     padding-bottom: 96px;
+
+    @media (max-width: $tab) {
+      padding-top: 124px;
+      padding-bottom: 76px;
+    }
+
+    @media (max-width: $mob) {
+      padding-top: 52px;
+      padding-bottom: 52px;
+    }
   }
 
   &__content{
     display: flex;
     flex-direction: column;
     gap: 40px;
+
+    @media (max-width: $mob) {
+      gap: 20px;
+    }
   }
 
   &__text{

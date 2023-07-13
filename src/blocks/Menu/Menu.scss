@@ -38,5 +38,10 @@
         -webkit-text-stroke: 1px $clipButton-color;
       }
     }
+
+    @media (max-width: $mob) {
+      font-size: 20px;
+      -webkit-text-stroke: 0.5px $white-color;
+    }
   }
 }
