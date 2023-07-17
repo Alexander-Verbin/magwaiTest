@@ -12,6 +12,8 @@ mixin Header(modifier)
             +Menu('УСЛУГИ','АБОНЕМЕНТЫ','ПОЧЕМУ МЫ','ОБОРУДОВАНИЕ','АКЦИИ','FAQ','КОНТАКТЫ')
         .Header__right
           a(href="tel:+70000000").Header__phone
-            include img/phone.svg
+            picture 
+              source(media="(max-width: 767px)", srcset="img/svg/phoneMob.svg")
+              img(src="img/svg/phone.svg", alt="phone")
           .Header__button.Popup__open 
             +ClipButton('ОСТАВИТЬ ЗАЯВКУ')

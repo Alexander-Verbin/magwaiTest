@@ -1,6 +1,6 @@
 .CardsSection {
   &__container{
-    padding-top: 134px;
+    padding-top: 92px;
     padding-bottom: 256px;
 
     @media (max-width: $tab) {
@@ -33,7 +33,7 @@
   &__content{
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 63px;
 
     @media (max-width: $mob) {
       gap: 38px;
@@ -55,7 +55,11 @@
   }
 
   &__card{
-    flex: 0 0 18.456%;
+    flex: 0 0 320px;
+
+    @media (max-width: calc($desc - 1px) ) {
+      flex: 0 0 18.456%;
+    }
 
     @media (max-width: $descSmall) {
       flex: 0 0 23%;
@@ -78,5 +82,9 @@
     width: 293px;
     height: 60px;
     align-self: center;
+
+    .ClipButton__button{
+      clip-path: polygon(97.4% 0%, 91.5% 100%, 42.24% 100%, 0% 100%, 6.52% 0%);
+    }
   }
 }
