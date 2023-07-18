@@ -4,13 +4,15 @@
     padding-bottom: 256px;
 
     @media (max-width: $tab) {
-			padding-top: 44px;
+			padding-top: 42px;
 			padding-bottom: 156px;
+      padding-left: 40px;
 		}
 
 		@media (max-width: $mob) {
 			padding-top: 48px;
 			padding-bottom: 43px;
+      padding-left: 16px;
 		}
   }
 
@@ -21,12 +23,14 @@
 			margin-bottom: 40px;
       font-size: px-to-em(42);
       line-height: px-to-per(51,42);
+      padding-left: 10px;
 		}
 
 		@media (max-width: $mob) {
 			margin-bottom: 30px;
       font-size: px-to-em(20);
-    line-height: px-to-per(24,20);
+      line-height: px-to-per(24,20);
+      padding-left: 0;
 		}
   }
 
@@ -70,7 +74,11 @@
     }
 
     @media (max-width: 890px) {
-      flex: 0 0 48.555%;
+      flex: 0 0 48.444%;
+    }
+
+    @media (max-width: 770px) {
+      flex: 0 0 327.943px;
     }
 
     @media (max-width: $mob) {

@@ -149,7 +149,7 @@ input::-webkit-inner-spin-button {
 
   @media (max-width: $tab) {
     max-width: calc($tab - 70px);
-    padding: 0 40px;
+    padding: 0 51px;
   }
 
   @media (max-width: $mob) {
@@ -172,7 +172,7 @@ input::-webkit-inner-spin-button {
 	border-radius: 10px;
   background-color: $white-color;
   position: absolute;
-  top:50%;
+  top:43%;
   left:0;
   transform: translateY(-50%);
   &:after{
@@ -182,7 +182,7 @@ input::-webkit-inner-spin-button {
     height: 3px;
     background-color:$white-color;
     position: absolute;
-    top:-6px;
+    top:-8px;
     left:0;
 		border-radius: 10px;
   }
@@ -193,7 +193,7 @@ input::-webkit-inner-spin-button {
     height: 3px;
     background-color:$white-color;
     position: absolute;
-    bottom:-6px;
+    bottom:-7px;
     left:0;
 		border-radius: 10px;
   }

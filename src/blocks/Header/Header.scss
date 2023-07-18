@@ -13,7 +13,7 @@
 
 		@media (max-width: $mob) {
 			padding-top: 20px;
-			padding-bottom: 21px;
+			padding-bottom: 14px;
 		}
 	}
 
@@ -41,7 +41,7 @@
 	&__left-block{
 		display: flex;
 		align-items: center;
-		gap: 91px;
+		gap: 94px;
 
 		@media (max-width: $mob) {
 			gap: 0;
@@ -61,6 +61,13 @@
 	&__logo{
 		display: block;
 		text-decoration: none;
+
+		@media (max-width: $mob) {
+			svg{
+				max-width: 112.5px;
+				height: 38.413px;	
+			}
+		}
 	}
 
 	&__phone{
@@ -79,6 +86,9 @@
 	}
 
 	&__phone{
+		@media (max-width:$tab) {
+			transform: translateX(18px);
+		}
 		img{
 			width: 100%;
 		}
@@ -87,6 +97,18 @@
 	&__button{
 		width: 302px;
 		height: 60px;
+
+		@media (max-width:$tab) {
+			width: 220px;
+
+			&  .ClipButton__button{
+				clip-path: polygon(96.9% 0%, 88.5% 100%, 41.24% 100%, 3% 100%, 11.52% 0%);
+			}
+
+			&  .ClipButton__item{
+				transform: translateX(-11px) rotate(17deg);
+			}
+		}
 
 		@media (max-width:$mob) {
 			width: 100%;
